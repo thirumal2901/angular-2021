@@ -1,3 +1,15 @@
 p {
   font-family: Lato;
 }
+
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+form {
+  max-width: 25em;
+  margin: 1em auto;
+}
