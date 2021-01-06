@@ -17,8 +17,8 @@ export class AppComponent {
 
   deleteItem(todo) {
     for (let i = 0; i <= this.todoArray.length; i++) {
-      if ((todo = this.todoArray[i])) {
-        this.todoArray.splice(i,1);
+      if (todo == this.todoArray[i]) {
+        this.todoArray.splice(i, 1);
       }
     }
   }
