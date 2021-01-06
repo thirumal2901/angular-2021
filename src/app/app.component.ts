@@ -1,4 +1,4 @@
-import { Component, VERSION } from "@angular/core";
+import { Component, VERSION, ViewChild } from "@angular/core";
 
 @Component({
   selector: "my-app",
@@ -6,6 +6,7 @@ import { Component, VERSION } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  @ViewChild("todo") inputName; // accessing the reference element
   name = "Angular " + VERSION.major;
 
   todoArray = [];
@@ -13,6 +14,7 @@ export class AppComponent {
   addTodo(value) {
     this.todoArray.push(value);
     console.log(this.todoArray);
+    this.inputName.nativeElement.value = " ";
   }
 
   deleteItem(todo) {
