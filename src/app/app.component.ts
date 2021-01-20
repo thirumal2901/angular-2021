@@ -16,7 +16,7 @@ export class AppComponent {
   addTodo(value) {
     this.todoArray.push(value);
     console.log(this.todoArray);
-    this.inputName.nativeElement.value = " ";
+    this.inputName.nativeElement.value = null;
     //this.inputName.nativeElement.value.placeholder = "TODO";
   }
 
