@@ -9,12 +9,15 @@ export class AppComponent {
   @ViewChild("todo") inputName; // accessing the reference element
   name = "Angular " + VERSION.major;
 
+  placeholder = "TODO";
+
   todoArray = [];
 
   addTodo(value) {
     this.todoArray.push(value);
     console.log(this.todoArray);
     this.inputName.nativeElement.value = " ";
+    //this.inputName.nativeElement.value.placeholder = "TODO";
   }
 
   deleteItem(todo) {
