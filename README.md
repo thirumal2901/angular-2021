@@ -1,3 +1,4 @@
-# angular-ivy-2cp3uu
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-2cp3uu)
+Doubts
+
+1. deleting hello component getting error msg "file '/ /src/app/hello.component.ng typecheck.tsc' not found", i searched all places not referring hello component. what is this?
