@@ -14,10 +14,12 @@ export class AppComponent {
   todoArray = [];
 
   addTodo(value) {
-    this.todoArray.push(value);
-    console.log(this.todoArray);
-    this.inputName.nativeElement.value = null;
-    //this.inputName.nativeElement.value.placeholder = "TODO";
+    if (value != "") {
+      this.todoArray.push(value);
+      console.log(this.todoArray);
+      this.inputName.nativeElement.value = null;
+      //this.inputName.nativeElement.value.placeholder = "TODO";
+    }
   }
 
   deleteItem(todo) {
