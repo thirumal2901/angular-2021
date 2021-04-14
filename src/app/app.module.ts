@@ -1,14 +1,14 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
-import { MatInputModule } from "@angular/material/input";
 
 import { AppComponent } from "./app.component";
 
+import { DemoMaterialModule } from "./material-module";
+
 @NgModule({
-  imports: [BrowserModule, FormsModule, MatInputModule],
+  imports: [BrowserModule, FormsModule, DemoMaterialModule],
   declarations: [AppComponent],
-  bootstrap: [AppComponent],
-  exports: [MatInputModule]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
